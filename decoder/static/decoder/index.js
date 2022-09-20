@@ -1,4 +1,8 @@
-document.getElementById("narrate_button").onclick = (event) => {
+const narrate_button = document.getElementById("narrate_button");
+
+narrate_button.onclick = (event) => {
+
+	narrate_button.innerHTML = 'Loading.....';
 	event.preventDefault();
 	let input_text = document.getElementById('input_text');
 
@@ -11,6 +15,7 @@ document.getElementById("narrate_button").onclick = (event) => {
 	})
 		.then((data) => data.json())
 		.then((data) => {
+			narrate_button.innerHTML = 'Narrate';
 			var snd = new Audio("data:audio/wav;base64," + data.byte_data.audioContent);
             snd.play();
 
