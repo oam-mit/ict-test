@@ -17,3 +17,6 @@ Command: `python3 manage.py runserver`
 
 # Home page
 ![My Image](images/Screen%20Shot%202022-09-20%20at%203.40.47%20PM.png)
+
+# Project Structure
+`decoder` folder contains the code for TTS. `tts` folder is the main project folder containing `settings.py`.
