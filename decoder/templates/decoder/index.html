@@ -1,0 +1,24 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech | Omkar Masur - 6917030798</title>
+</head>
+<body>
+
+    <form id="tts_form" method="POST" action="{%url 'decoder:download_output'%}">
+        {%csrf_token%}
+        <textarea id="input_text" name="input_text"></textarea>
+        <button id="narrate_button">Narrate</button>
+        <button type="submit">Download Output</button>
+    </form>
+    
+</body>
+<script src="{%static 'decoder/index.js'%}"></script>
+
+
+</html>
