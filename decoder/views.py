@@ -41,11 +41,11 @@ def download(request):
     '''
 
     if request.method =='POST':
-        tts = GoogleTTS()
-        data = tts.convert_text_to_speech(request.POST.get('input_text'))
+        # tts = GoogleTTS()
+        # data = tts.convert_text_to_speech(request.POST.get('input_text'))
 
         buffer = io.BytesIO()
-        content = base64.b64decode(data['audioContent'])
+        content = base64.b64decode(request.POST.get('base64_audio'))
         buffer.write(content)
 
         response = HttpResponse(

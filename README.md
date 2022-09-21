@@ -16,7 +16,7 @@ Command: `python3 manage.py runserver`
 ##### Step 4: Go to `http://localhost:8000`. You will see the homepage upon doing so.
 
 # Home page
-![My Image](images/Screen%20Shot%202022-09-20%20at%203.40.47%20PM.png)
+![My Image](images/Screen%20Shot%202022-09-20%20at%2011.01.20%20PM.png)
 
 # Project Structure
 `decoder` folder contains the code for TTS. `tts` folder is the main project folder containing `settings.py`.
